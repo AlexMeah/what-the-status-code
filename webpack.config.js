@@ -13,7 +13,7 @@ const standardCssExtract = new ExtractTextPlugin('css/[name].[hash].css', {
 
 const _exports = {
     context: path.join(__dirname, '/'),
-    entry: ['webpack-dev-server/client?reload=true', path.join(__dirname, './client/index.js')],
+    entry: path.join(__dirname, './client/index.js'),
     devtool: '#inline-source-map',
     output: {
         path: path.join(__dirname, 'dist'),
@@ -44,7 +44,6 @@ const _exports = {
     },
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
-        new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin(),
         new webpack.DefinePlugin({
             'process.env': {
