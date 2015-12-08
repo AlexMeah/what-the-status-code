@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "eslint . --ext js,jsx && ./node_modules/.bin/karma start ./test/karma.conf.js",
-    "client-test": "eslint . --ext js,jsx && ./node_modules/.bin/karma start ./test/karma.conf.js",
+    "karma": "./node_modules/.bin/karma start ./test/karma.conf.js",
+    "test": "eslint . --ext js,jsx",
     "build": "npm test && webpack --config webpack.dist.js && echo '\n\nBuild Succeeded 👍\n\n'",
     "dev": "NODE_ENV=dev webpack-dev-server --hot --inline --content-base ./dist"
   },
