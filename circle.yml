@@ -6,6 +6,8 @@ deployment:
   production:
     branch: master
     commands:
+        - git config user.name "CircleCI"
+        - git config user.email "no-reply@circleci.com"
         - npm run build
         - git add -A
         - git commit -m "Deploy"
