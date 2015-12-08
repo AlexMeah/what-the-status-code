@@ -7,7 +7,6 @@ const webpack = require('webpack');
 const Clean = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const StatsPlugin = require('stats-webpack-plugin');
 const standardCssExtract = new ExtractTextPlugin('css/[name].[hash].css', {
     disable: false
 });
@@ -20,7 +19,7 @@ const _exports = {
     entry: path.join(__dirname, './client/index.js'),
     output: {
         path: path.join(__dirname, 'dist'),
-        publicPath: '/what-the-status-code/',
+        publicPath: './',
         filename: 'js/[name].[hash].bundle.js'
     },
     resolve: {
@@ -57,15 +56,8 @@ const _exports = {
                 NODE_ENV: JSON.stringify('production'),
                 BROWSER: JSON.stringify(true)
             }
-        }), standardCssExtract, new StatsPlugin(path.join(__dirname, './dist/stats.json'), {
-            chunks: false,
-            modules: false,
-            cached: false,
-            reasons: false,
-            source: false,
-            errorDetails: false,
-            chunkOrigins: false
         }),
+        standardCssExtract,
         new webpack.optimize.UglifyJsPlugin(),
         new webpack.optimize.DedupePlugin(),
         new HtmlWebpackPlugin({
