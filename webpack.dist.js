@@ -20,7 +20,7 @@ const _exports = {
     entry: path.join(__dirname, './client/index.js'),
     output: {
         path: path.join(__dirname, 'dist'),
-        publicPath: '/',
+        publicPath: './',
         filename: 'js/[name].[hash].bundle.js'
     },
     resolve: {
