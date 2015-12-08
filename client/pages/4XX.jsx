@@ -14,7 +14,7 @@ const questions = {
             }, {
                 text: 'No',
                 type: 'QUESTION',
-                path: '/4XXe/2'
+                path: '/4XX/2'
             }
         ]
     },
@@ -25,11 +25,11 @@ const questions = {
             {
                 text: 'Yes',
                 type: 'QUESTION',
-                path: '/4XXe/3'
+                path: '/4XX/3'
             }, {
                 text: 'No',
                 type: 'QUESTION',
-                path: '/4XXe/4'
+                path: '/4XX/4'
             }
         ]
     },
@@ -44,7 +44,7 @@ const questions = {
             }, {
                 text: 'No',
                 type: 'QUESTION',
-                path: '/4XXe/5'
+                path: '/4XX/5'
             }
         ]
     },
@@ -55,11 +55,11 @@ const questions = {
             {
                 text: 'Yes',
                 type: 'QUESTION',
-                path: '/4XXe/6'
+                path: '/4XX/6'
             }, {
                 text: 'No',
                 type: 'QUESTION',
-                path: '/4XXe/5'
+                path: '/4XX/5'
             }
         ]
     },
@@ -85,11 +85,11 @@ const questions = {
             {
                 text: 'Yes',
                 type: 'QUESTION',
-                path: '/4XXe/8'
+                path: '/4XX/8'
             }, {
                 text: 'No',
                 type: 'QUESTION',
-                path: '/4XXe/7'
+                path: '/4XX/7'
             }
         ]
     },
@@ -115,7 +115,7 @@ const questions = {
             {
                 text: 'Yes',
                 type: 'QUESTION',
-                path: '/4XXe/9'
+                path: '/4XX/9'
             }, {
                 text: 'No',
                 type: 'REDIRECT',
