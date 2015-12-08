@@ -1,0 +1,24 @@
+{
+    "env": {
+        "mocha": true,
+        "es6": true
+    },
+    "globals": {
+        "expect": true
+    },
+    "plugins": [
+        "react"
+    ],
+    "ecmaFeatures": {
+        "jsx": true,
+        "experimentalObjectRestSpread": true
+    },
+    "extends": "airbnb",
+    "rules": {
+        "indent": [2, 4],
+        "comma-dangle": 0,
+        "new-cap": 0,
+        "id-length": 0,
+        "no-multiple-empty-lines": 2
+    }
+}

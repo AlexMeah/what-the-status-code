@@ -1,0 +1,38 @@
+@import "vars";
+
+label {
+    display: block;
+    position: relative;
+    margin-top: 1rem;
+
+    &.error {
+        color: $danger;
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            border: 1px solid $danger;
+        }
+    }
+
+     > span {
+        display: block;
+        padding: 0 0 1rem;
+        color: inherit;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        font-size: 14px;
+        color: inherit;
+        outline: none;
+        height: 3rem;
+        line-height: 3rem;
+        border: 1px solid $primary;
+        background-color: #FFF;
+    }
+}

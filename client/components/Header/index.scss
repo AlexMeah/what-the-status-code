@@ -1,0 +1,16 @@
+@import "vars";
+
+.header {
+    padding: 0.5rem 1rem;
+    line-height: 2rem;
+    background-color: $primary;
+    color: #fff;
+
+    a {
+        color: #fff;
+    }
+
+    h1 {
+        margin: 0;
+    }
+}

@@ -1,0 +1,91 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss";
+
+@import "vars";
+
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss";
+
+*,
+*::before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: $muted;
+}
+
+@import "./helpers/clearfix";
+@import "./helpers/utilities";
+
+@import "./modules/typography";
+@import "./modules/btn";
+@import "./modules/forms";
+
+a {
+    color: $interaction;
+}
+
+.divider {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 2rem 0;
+}
+
+.divider > * {
+    position: relative;
+    display: inline-block;
+}
+
+.divider > *:before,
+.divider > *:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: $primary;
+}
+
+.divider > *:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.divider > *:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.container {
+    align-self: center;
+}
+
+.question {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.answers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-align-content: flex-end;
+    align-content: space-between;
+}
+
+.answer {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.code {
+    font-size: 5rem;
+    color: $positive;
+}

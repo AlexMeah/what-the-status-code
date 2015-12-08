@@ -1,0 +1,151 @@
+@mixin btn ($color, $bg) {
+    padding: 1rem 1.5rem;
+    background-color: $bg;
+    box-shadow: 0 4px 0 0 darken($bg, 20%);
+    color: $color;
+
+    &:focus {
+        background-color: lighten($bg, 10%);
+    }
+
+    &:hover {
+        background-color: darken($bg, 10%);
+    }
+
+    &:active {
+        background-color: lighten($bg, 10%);
+    }
+}
+
+.btn {
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+    border: medium none;
+    border-spacing: 0;
+    font-size: inherit;
+    text-decoration: none;
+    -webkit-appearance: none;
+    border-radius: 4px;
+    outline: none;
+    transition: background 0.3s;
+    background: none;
+    margin-top: 1rem;
+}
+
+.btn::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.btn--primary {
+    @include btn(#fff, $primary);
+}
+
+.btn--cta {
+    @include btn(#333, $cta);
+}
+
+.btn--interaction {
+    @include btn(#fff, $interaction);
+}
+
+.btn--danger {
+    @include btn(#fff, $danger);
+}
+
+.btn--positive {
+    @include btn(#333, $positive);
+}
+
+.btn--twitter {
+    @include btn(#fff, $twitter);
+}
+
+.btn--facebook {
+    @include btn(#fff, $facebook);
+}
+
+.btn--google {
+    @include btn(#fff, $google);
+}
+
+.btn--link {
+    color: $interaction;
+
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+}
+
+.btn--block {
+    text-align: center;
+    display: block;
+    margin: 1rem auto 0;
+}
+
+.btn-group {
+    @extend .cf;
+
+    .btn {
+        text-align: center;
+        border-radius: 0;
+
+        &:first-child {
+            border-radius: 4px;
+        }
+
+        &:last-child {
+            border-radius: 4px;
+        }
+    }
+
+    &--center {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: $screen-xs) {
+    .btn-group {
+        .btn {
+            width: 100%;
+            margin-top: 0;
+
+            &:first-child {
+                margin-top: 1rem;
+                border-radius: 4px;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            &:last-child {
+                border-radius: 4px;
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+                border: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-xs) {
+    .btn-group {
+        display: flex;
+
+        .btn {
+            border-right: 1px solid #333;
+            flex: 1 1 auto;
+            margin-top: 1rem;
+
+            &:first-child {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            &:last-child {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+    }
+}

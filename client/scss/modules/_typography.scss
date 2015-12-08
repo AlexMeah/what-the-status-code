@@ -1,0 +1,131 @@
+/*! Typebase.scss v0.1.0 | MIT License */
+
+$baseFontSize: 14;
+$baseLineHeight: 1.5;
+$leading: $baseLineHeight * 1rem;
+
+// Rate of growth for headings
+$scale: 1.414;
+
+/* Setup */
+
+html {
+    font-family: 'Work Sans', sans-serif;
+    font-size: $baseFontSize / 16 * 100%;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    // -webkit-text-size-adjust: auto
+    // -moz-text-size-adjust: auto
+    // -ms-text-size-adjust: auto
+    // -o-text-size-adjust: auto
+    // text-size-adjust: auto
+
+}
+
+/* Copy & Lists */
+
+p {
+    line-height: $leading;
+    margin-top: $leading;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: $leading;
+    margin-bottom: $leading;
+
+    li {
+        line-height: $leading;
+    }
+
+    ul,
+    ol {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+blockquote {
+    line-height: $leading;
+    margin-top: $leading;
+    margin-bottom: $leading;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: $leading;
+    margin-bottom: 0;
+    line-height: $leading;
+}
+
+h1 {
+    font-size: 2 * $scale * 1rem;
+    line-height: 2 * $leading;
+    margin-top: 2 * $leading;
+}
+
+h2 {
+    font-size: 1.2 * $scale * 1rem;
+    line-height: 1.2 * $leading;
+    margin-top: 2 * $leading;
+}
+
+h3 {
+    font-size: 1 * $scale * 1rem;
+}
+
+h4 {
+    font-size: $scale / 2 * 1rem;
+}
+
+h5 {
+    font-size: $scale / 3 * 1rem;
+}
+
+h6 {
+    font-size: $scale / 4 * 1rem;
+}
+
+.display {
+    font-size: 4rem;
+}
+
+/* Tables */
+
+table {
+    margin-top: $leading;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 0;
+    line-height: $baseLineHeight * $baseFontSize - 0px;
+}
+
+/* Code blocks */
+
+code {
+    vertical-align: bottom;
+}
+
+/* Leading paragraph text */
+
+.lead {
+    font-size: $scale * 1rem;
+}
+
+/* Hug a the block above you */
+
+.hug {
+    margin-top: 0;
+}
