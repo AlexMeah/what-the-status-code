@@ -8,9 +8,21 @@
 
     a {
         color: #fff;
+        text-decoration: none;
     }
 
     h1 {
-        margin: 0;
+        font-size: 2rem;
+        margin: 1rem 0;
+        text-decoration: none;
+        line-height: 1;
+    }
+}
+
+@media (min-width: 30rem) {
+    .header {
+        h1 {
+            font-size: 4rem;
+        }
     }
 }

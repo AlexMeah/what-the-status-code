@@ -9,7 +9,7 @@ const Header = React.createClass({
     render: function render() {
         return (
             <header className="header cf">
-                <Link to="/"><div className="divider"><h1 className="tac display">What the status code?</h1></div></Link>
+                <Link to="/"><h1 className="tac">What the status code?</h1></Link>
             </header>
         );
     }

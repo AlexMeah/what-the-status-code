@@ -1,0 +1,14 @@
+.question {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.answers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-align-content: flex-end;
+    align-content: space-between;
+}

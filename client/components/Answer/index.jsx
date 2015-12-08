@@ -1,14 +1,15 @@
 if (process.env.BROWSER) {
-    // require('./index.scss');
+    require('./index.scss');
 }
 
 import React, {PropTypes} from 'react';
-import utils from '../../utils';
+import {Link} from 'react-router';
 
-const Answer = ({answer}) => (<div className="btn btn--interaction answer" onClick={utils.handleAnswer.bind(null, answer)}>{answer.text}</div>);
+const Answer = ({path, text}) => (<Link className="btn btn--interaction answer" to={path}>{text}</Link>);
 
 Answer.propTypes = {
-    answer: PropTypes.object.isRequired
+    path: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
 };
 
 module.exports = Answer;
