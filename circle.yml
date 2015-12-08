@@ -8,3 +8,10 @@ dependencies:
     - sudo apt-get install build-essential
     - sudo apt-get install gcc
     - sudo apt-get install g++
+
+deployment:
+  production:
+    branch: master
+    commands:
+        - npm run build
+        - git subtree push --prefix dist origin gh-pages
