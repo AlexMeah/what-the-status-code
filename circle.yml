@@ -9,6 +9,6 @@ deployment:
         - git config user.name "CircleCI"
         - git config user.email "no-reply@circleci.com"
         - npm run build
-        - git add -A
+        - git add dist
         - git commit -m "Deploy"
-        - git subtree push --prefix dist origin gh-pages
+        - ./deploy.sh
