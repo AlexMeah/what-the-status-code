@@ -49,8 +49,7 @@ const _exports = {
                 test: /\.json?$/,
                 loader: 'json?optional[]=runtime'
             }
-        ],
-        noParse: [pathToReact, pathToReactDom]
+        ]
     },
     plugins: [
         new webpack.DefinePlugin({
