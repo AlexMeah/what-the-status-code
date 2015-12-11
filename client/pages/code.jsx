@@ -1,4 +1,5 @@
 import React, {PropTypes} from 'react';
+const httpStatus = require('http-status-codes');
 
 const Code = React.createClass({
     propTypes: {
@@ -9,8 +10,12 @@ const Code = React.createClass({
         const { code } = this.props.params;
 
         return (
-            <section className="container">
-                <h2 className="tac code">{code}</h2>
+            <section className="tac container">
+                <h2 className="code">{code}</h2>
+
+                <h3>{httpStatus.getStatusText(code)}</h3>
+
+                <p><a href={'https://httpstatuses.com/' + code}>More Info</a></p>
             </section>
         );
     }
