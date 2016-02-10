@@ -72,7 +72,7 @@ const questions = {
                 type: 'REDIRECT',
                 path: '/code/201'
             }, {
-                text: 'No, it\'s done',
+                text: 'No',
                 type: 'REDIRECT',
                 path: '/code/303'
             }
