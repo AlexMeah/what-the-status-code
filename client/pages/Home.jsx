@@ -1,6 +1,7 @@
 import React, {PropTypes} from 'react';
 
 import Question from '../components/Question/index.jsx';
+import Footer from '../components/Footer/index.jsx';
 
 const questions = {
     1: {
@@ -58,6 +59,7 @@ const Home = React.createClass({
         return (
             <section className="container">
                 <Question {...question} />
+                <Footer />
             </section>
         );
     }
