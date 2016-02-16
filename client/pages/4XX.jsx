@@ -191,11 +191,11 @@ const questions = {
             {
                 text: 'Yes',
                 type: 'REDIRECT',
-                path: '/code/422'
+                path: '/code/400'
             }, {
                 text: 'No',
                 type: 'REDIRECT',
-                path: '/code/400'
+                path: '/code/422'
             }
         ]
     }
